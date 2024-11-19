@@ -12,21 +12,22 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <div>
-          <h1
-            className={`${styles.heroHeadText} text-white lg:text-[45px] sm:text-[40px] xs:text-[30px]`}>
+          <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Abdelrahman Naser</span>
           </h1>
           <p
-            className={`${styles.heroSubText} text-white-100 lg:text-[24px] sm:text-[20px] xs:text-[16px]  `}>
+            className={`${styles.heroSubText} text-white-100 lg:text-[24px] sm:text-[20px] xs:text-[16px]`}>
             I develop web and mobile apps using
             <br className="sm:block hidden" />
             React.js, Next.js, and React Native Expo.
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      <div className="absolute z-[8] inset-0">
+        <ComputersCanvas />
+      </div>
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-start">
-        <a href="#about">
+        <a href="#about" className="z-[999]">
           <div className="w-[35px] h-[64px] border-4 border-secondary flex justify-center items-center p-2 rounded-3xl">
             <motion.div
               animate={{
