@@ -1,9 +1,8 @@
-import React from 'react'
-
+import React from "react";
+import SectionWrapper from "../hoc/SectionWrapper";
+import { technologies } from "../constants";
 const Tech = () => {
-  return (
-    <div>Tech</div>
-  )
-}
+  return <div>Tech</div>;
+};
 
-export default Tech
+export default SectionWrapper(Tech, "tech");
