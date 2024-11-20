@@ -41,12 +41,17 @@ const ProjectCard = ({
                 src={github}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
+                title="I am the hover text!"
               />
             </div>
           </div>
         </div>
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <h3
+            className="text-white font-bold text-[24px]"
+            title="I am the hover text!">
+            {name}
+          </h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
